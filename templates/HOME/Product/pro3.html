@@ -1,0 +1,361 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/Product_static/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<title>CHỊ CHỊ EM EM</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Chi Chi Em Em - Product Details</title>
+</head>
+<body>
+  <header>
+
+    <div class="header1">
+      <marquee direction="down" scrollamount="2" class="HH1">
+        Beautiful like you
+      </marquee>
+      <div class="HHH1"></div>
+      <marquee direction="down" scrollamount="2" class="HH1">
+        Delicious like me
+
+      </marquee>
+    </div>
+    <div class="header2">
+      <div style="display: flex; width: 100%;">
+        <div class="search"><input class="cmt3" type="search" name="lastName" placeholder="Tìm kiếm">
+          <div class="timkiem">
+            <img style=" width: 25px;height: 25px;margin-top: 5px;" src="{% static 'imagehesder/sear.png' %}" alt="search">
+          </div>
+        </div>
+        <div class="LG"><a href="{% url 'Home' %}"><img class="logo" src="{% static 'imagehesder/LG.png' %}" alt="logo"></a></div>
+        <div class="HH2">
+          <nav>
+            <div style="width:40%;"><a style="width:50%;" href="{% url 'profile'%}">Account</a></div>
+            {% if User.is_authenticated %}
+            <div style="width:30%;"></div>
+              <div style="width:10%;"><a style="width:50%;" href="{% url 'logout' %}">Logout</a>
+              </div>
+            {% else %}
+            <div style="width:30%;"><a style="width:50%;" style=" margin-right: -10px; margin-left: 18px;"
+                href="{% url 'signin' %}">Login</a></div>
+            <div style="width:10%;"><a style="width:50%;" href="{% url 'signup' %}">Register</a>
+            </div>
+            {% endif %}
+
+          </nav>
+        </div>
+      </div>
+      <div class="congcu">
+        <div class="trong"></div>
+        <div class="navt">
+          <nav>
+            <div style="width:45%;">
+              <ul>
+                <li>
+                  <a style="width:65%;" href="{% url 'Products' %}">Product</a>
+         
+                </li>
+              </ul>
+            </div>
+            <div style="width:45%;">
+              <ul>
+                <li>
+                  <a style="width:65%;" href="http://webcoban.vn/css/default.html">Material</a>
+                  <ul>
+                    <li><a style="border: none;" href="#">Link 1</a></li>
+                    <li><a style="border: none;" href="#">Link 2</a></li>
+                    <li><a style="border: none;" href="#">Link 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div style="width:45%;">
+              <ul>
+                <li>
+                  <a style="width:55%;" href="http://webcoban.vn/javascript/default.html">Tool</a>
+                  <ul>
+                    <li><a style="border: none;" href="#">Link 1</a></li>
+                    <li><a style="border: none;" href="#">Link 2</a></li>
+                    <li><a style="border: none;" href="#">Link 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div style="width:45%;">
+              <ul>
+                <li>
+
+                  <a style="width:65%;" href="http://webcoban.vn/mysql/default.html">Design</a>
+                  <ul>
+                    <li><a style="border: none;" href="#">Link 1</a></li>
+                    <li><a style="border: none;" href="#">Link 2</a></li>
+                    <li><a style="border: none;" href="#">Link 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div style="width:45%;">
+              <ul>
+                <li>
+                  <a style="width:65%;" href="{% url 'FAQ' %}">Service</a>
+
+                </li>
+              </ul>
+            </div>
+            <div style="width:45%;">
+              <ul>
+                <li>
+                  <a style="width:65%;" href="{% url 'Cart' %}">Cart</a>
+                 </li>
+              </ul>
+            </div>
+
+          </nav>
+        </div>
+        <div class="trong"></div>
+
+
+      </div>
+    </div>
+  </header>
+                        <main>
+                          <div class="small-container single-product">
+                              <div class="row">
+                                  <div class="col-2">
+                                      <img class="img-prd" src="{% static 'image/Screenshot 2021-11-18 225059.png'%}" 
+                                      alt="product image" width="100%" id="Productimg">
+                                      <div class="small-img-row">
+                                          <div class="small-img-col">
+                                              <img src="{% static 'image/Screenshot 2021-11-18 225059.png'%}" 
+                                              alt="Product Image" width="100%" class="small-img">
+                                          </div>
+                                          <div class="small-img-col">
+                                              <img src="{% static 'image/Screenshot 2021-11-18 225118.png'%}" 
+                                              alt="Product Image" width="100%" class="small-img">
+                                          </div>
+                                          <div class="small-img-col">
+                                              <img src="{% static 'image/Screenshot 2021-11-18 225131.png'%}" 
+                                              alt="Product Image" width="100%" class="small-img">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-2">
+                                      <p class="home-link">Home / Banh Tay</p>
+                                      <h1 class="content-product-h3">Bánh Tiramisu Hình Trái Tim</h1>
+                                      <h4 class="price">220000đ</h4>
+                                      <select name="" id="">
+                                          <option class="optionSelect--css">
+                                              <span class="optionSpan">
+                                                  Select Size
+                                              </span>
+                                          </option>
+                                          <option class="optionSelect--css">15cm</option>
+                                          <option class="optionSelect--css">20cm</option>
+                                          <option class="optionSelect--css">25cm</option>
+                                      </select>
+                                      <input type="number" value="1" min="1" class="count">
+                                      <button type="button" class="btn btn-cart" id="cart">Thêm Vào Giỏ</button>
+                                      <h3>Mô tả <i class="fa fa-indent"></i></h3>
+                                      <br>
+                                      <p>
+                                          ♥  Cốt bánh: Bông lan cacao.<br>
+                                          ♥  Mousse bánh: Phô mai mascarpone, trứng, kem tươi whipping, cà phê, rượu Rhum; Mặt bánh rắc bột cacao.<br>
+                                          ♥  Vị bánh: bánh béo dịu, thơm socola và café, nồng nhẹ từ rượu.<br>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <section class="wrapper">
+                              <h2>Sản phẩm liên quan</h2>
+                              <div class="RProducts">
+                                  <ul style="display: flex; justify-content: space-between; width: 100%;">
+                                      <!--Product1-->
+                                      <li class="main-product">
+                                        <div class="img-product">
+                                          <a href="{% url 'sweet1' %}" ><img class="img-prd"
+                                              src="{% static 'image/Screenshot 2021-11-18 002906.png'%}"
+                                              alt="Banh mouse chanh day"
+                                              ></a>
+                                          </div>
+                                          <div class="content-product">
+                                              <h3 class="content-product-h3">Bánh Mouse Chanh dây</h3>
+                                              <div class="content-product-deltals">
+                                                  <div class="price">
+                                                      <span class="money">25000đ</span>
+                                                  </div>
+                                                  <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <!--Product2-->
+                                      <li class="main-product">
+                                          <div class="img-product">
+                                            <a href="{% url 'sweet3' %}"><img class="img-prd"
+                                              src="{% static 'image/Screenshot 2021-11-18 004507.png'%}"
+                                              alt="Banh mouse tra xanh"
+                                              ></a>
+                                          </div>
+                                          <div class="content-product">
+                                              <h3 class="content-product-h3">Bánh Mouse Trà Xanh</h3>
+                                              <div class="content-product-deltals">
+                                                  <div class="price">
+                                                      <span class="money">28000đ</span>
+                                                  </div>
+                                                  <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <!--Product3-->
+                                      <li class="main-product">
+                                          <div class="img-product">
+                                            <a href = "{% url 'sweet2' %}"><img class="img-prd"
+                                              src="{% static 'image/Screenshot 2021-11-17 210643.png'%}"
+                                              alt="Banh socola"
+                                              ></a>
+                                          </div>
+                                          <div class="content-product">
+                                              <h3 class="content-product-h3">Bánh Mouse Socola Dâu Tây</h3>
+                                              <div class="content-product-deltals">
+                                                  <div class="price">
+                                                      <span class="money">30000đ</span>
+                                                  </div>
+                                                  <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <!--Product4-->
+                                      <li class="main-product">
+                                          <div class="img-product">
+                                            <div class="img-product">
+                                              <a href="{% url 'sweet5' %}"><img class="img-prd"
+                                                  src="{% static 'image/Screenshot 2021-11-18 004912.png' %}"
+                                                  alt="Banh mouse bap ngot"
+                                                  ></a>
+                                          </div>
+                                          <div class="content-product">
+                                              <h3 class="content-product-h3">Bánh Mouse Bắp Ngọt</h3>
+                                              <div class="content-product-deltals">
+                                                  <div class="price">
+                                                      <span class="money">21000đ</span>
+                                                  </div>
+                                                  <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                              </div>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </section>
+                      </main>
+                      
+    <footer>
+                 
+        <div class ="trangcuoifooter">
+          <div>
+            <div class ="footerlocation" style="padding: 10px; color: #fff;">
+              <h2 style=" font-size: 40px; font-family: 'Roboto', sans-serif;"> Location </h2>
+              <p style="color: #fff;font-size: 18px;font-family: 'Roboto', sans-serif;"><strong>University Information Technology&nbsp;</strong><br>Nhom 3, IE<br>Monday - Friday: 10:30am&nbsp;- 7:30pm<br>Saturday: 11:00am - 7:30pm<br>Sunday and Public Holidays: 11:00am - 7:00pm<br>Tel: 0916545216</p>
+            </div>
+            <ul>
+              <li style="display: inline;"> <a href="facebook">.....</a></li>
+              <li style="display: inline;"> <a href="instagram">.....</a></li>
+              <li style="display: inline;"> <a href="youtube">.....</a></li>
+            </ul>
+          </div>
+          <div class="linkfooter">
+            <h2 style="font-family: 'Roboto', sans-serif; font-size: 40px;" >Quick Links</h2>
+      
+            <ul style="padding: 6px; color: #fff;font-size: 18px;">
+                <li>
+                  <a href="" >FAQ</a>
+                </li>
+                <li >
+                  <a href="" >About Us</a>
+                </li>
+                <li>
+                  <a href="">Blog</a>
+                </li>
+                <li>
+                  <a href="">Press</a>
+                </li>
+                <li>
+                  <a href="">Contact Us</a>
+                </li>
+                <li>
+                  <a href="" >Cart</a>
+                </li>
+                <li">
+                  <a href="">Searching</a>
+                </li>
+              </ul>
+          </div>
+          <div class="footerlienlac" style="flex-basis: 325px;">
+            <h2 class="Footer__Title Heading u-h6" style=" font-size: 40px;font-family: 'Roboto', sans-serif;">Newsletter</h2>
+            
+              <p style="color: #fff;font-size: 18px;font-family: 'Roboto', sans-serif;">Subscribe to receive updates, access to exclusive deals, and more.</p>
+            <form style="margin-top: 18px;width: 100%;">
+              <input type="email"  class="footerEmail"  placeholder="Enter your email address" required="">
+              <button type="submit" class="footersubcribe">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+  <!-- modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Giỏ Hàng</h5>
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                <span class="cart-price cart-header cart-column">Giá</span>
+                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+            </div>
+            <div class="cart-items">
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="{% static 'image/Screenshot 2021-11-17 210643.png'%}" width="100" height="100">
+                    <span class="cart-item-title">Bánh Mouse Socola Dâu Tây</span>
+                </div>
+                <span class="cart-price cart-column">12000đ</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">Xóa</button>
+                </div>
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Tổng Cộng:</strong>
+                <span class="cart-total-price">0VNĐ</span>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+            <button type="button" class="btn btn-primary order">Thanh Toán</button>
+        </div>
+    </div>
+</div>
+<script src="{% static 'Product_static/modal.js' %}"></script>
+<script src="{% static 'Product_static/main.js' %}"></script>
+</body>
+</html>
+<div>z</div>

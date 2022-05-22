@@ -1,0 +1,7 @@
+{% autoescape off %}
+Hế lô {{name}}
+
+Nhấn vào link bên dưới để xác nhận tài khoản:
+
+http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+{% endautoescape %}

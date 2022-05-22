@@ -1,0 +1,672 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'headerfooter.css' %}">
+    <link rel="Stylesheet" href="{% static 'account/Style.css' %}">
+        <link rel="Stylesheet" href="all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<title>CHỊ CHỊ EM EM</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>Chi Chi Em Em - Product Details</title>
+    <style>
+      html,body{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+html{
+    background-color: rgb(250, 246, 246);
+
+    font-size: 10px;
+}
+body{
+    min-width: 800px;
+    width: 100%;
+background-color: #ffffff;
+
+margin: 0px auto;
+}
+ /* HEADER */
+ header{
+    width: 100%;
+    height: 265px;
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+  background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header1{
+width: 100%;
+display: flex;
+height: 120px;
+background-color: #f08080;
+}
+.HH1{
+    font-family: 'Birthstone Bounce', cursive;
+margin-top: 30px;
+font-size: 40px;
+color:#fff;
+width: 35%;
+text-align: center;
+height:45px ;
+}
+.HHH1{
+ width: 30%;
+ height: 50px;   
+}
+.header2{
+    width: 100%;
+    height: 150px;
+   
+    /* border-top:solid #000; */
+}
+.cmt3{
+    width: 50%;
+    height: 41px;
+   margin-left:  80px;
+    text-align: left;
+    color: black;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    margin-top: 0px; 
+  
+    background-color: rgb(255, 255, 255);
+    border-bottom: solid #f08080;
+    border-top: solid #FFF;
+    border-left: solid #FFF;
+    border-right: solid #FFF;
+  }
+  .search{
+      margin-top: 40px;
+      display: flex;
+      width: 40%;
+    }
+    .timkiem{
+      background-color: #f08080;
+      border: solid #f08080;
+      width: 40px;
+      height: 41px; 
+      background-image: #f08080;
+    
+      border-radius: 50%;
+      text-align: center; 
+    }
+    .LG{
+        width: 20%;
+        margin-top: -100px;
+        border-radius: 50% ;
+     
+    }
+
+.logo{
+
+  width: 200px;
+  background-color: #fff;
+  height: 200px;     border-radius: 50% ;
+  text-align: center;
+
+}
+.HH2{
+  font-family: 'Satisfy', cursive;
+    font-size: 10px;
+    width: 40%;
+    height: 45px;
+    margin-top: 40px;
+    margin-left: 12px;
+  
+  
+}
+nav{
+
+display: flex;
+background-color:#ffffff;
+}
+.HH2 nav a{
+text-align: center;  
+width: 15%;
+display:inline-flex;
+padding:10px;
+font-size:20px;
+color:rgb(0, 0, 0);
+text-decoration:none;
+}
+
+nav a{
+text-align: center;  
+width: 25%;
+display:inline-flex;
+padding:10px;
+font-size:20px;
+color:rgb(0, 0, 0);
+text-decoration:none;
+}
+
+.congcu {
+display: flex;
+font-size: 10px;
+   width: 100%;
+    height: 45px;
+    text-align: center;  
+}
+
+.congcu nav a:hover{
+border-bottom: solid #f08080;
+}
+.trong{
+height: 50px;
+background-color: #fff;
+width: 15%;
+}
+.navt{
+width: 70%;
+background-color: #fff;
+height: 50px; 
+font-family: 'Satisfy', cursive;
+}
+.navt a{
+width: 50%;
+margin-right: 20px ;
+text-align: center;
+
+}
+ul {
+display: inline;
+margin: 0;
+padding: 0;
+}
+ul li {display: inline-block;}
+
+ul li:hover ul {display: block;}
+ul li ul {
+position: absolute;
+width: 18%;
+text-align: center;
+display: none;
+}
+ul li ul li { 
+background: #ffcad4; 
+width: 80%;
+display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background:#f8ad9d ;border: solid #fff;}
+/* MAIN */
+main{
+  width: 100%;
+  margin-top: auto;
+  margin-top: 280px;
+  height: 750px;
+
+}
+* {box-sizing:border-box}
+/* thiết lập style cho slideshow container */
+ .slideshow-container {
+   width: 100%;
+
+
+   position: relative;
+   margin: auto;
+ }
+/* ẩn hình ảnh cho phần tử slideshow */
+ .mySlides {
+   display: none;
+ }
+/* thiết kế nút mũi tên*/
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+/* thiết kế nút mũi tên next nằm phía bên phải */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+/* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+/* Thiết lập style cho nội dung của mỗi phần tử slideshow */
+ .text {
+   color: #f2f2f2;
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+ }
+/* Thiết lập style cho số hiển thị của phần tử */
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+/* thiết lập style  nút tròn điều khiển*/
+ .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+.active, .dot:hover {
+   background-color: #717171;
+ }
+/* tạo hiệu ứng chuyển động fade */
+ .fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+@-webkit-keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+@keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+ 
+/* footer */
+footer{
+  font-family: 'Roboto', sans-serif;
+background-color: #f08080;
+color: #fff;
+padding: 42px 45px 45px 51px;
+line-height: 1.85;
+font-size: 12px;
+
+}
+.trangcuoifooter{
+display: flex;
+flex-wrap: wrap;
+color: #FFF;
+justify-content: space-between;
+}
+.linkfooter a{
+color: inherit;
+color: #FFF;
+background-color: transparent;
+text-decoration: none;
+}
+.linkfooter li{
+margin-bottom: 5px;
+
+}.footerEmail{
+color: #f08080;
+background-color: #FFF;
+border: 1px solid #ddd;
+padding: 11px 35px;
+}
+.footersubcribe{
+background-color:#fff;
+margin-top: 20px;
+padding: 14px 36px;
+border: 1px solid;
+color: #f08080;
+letter-spacing: .2em;
+cursor: pointer;
+border-color: #FFF;
+}
+button.footersubcribe:hover{
+  background-color: rgb(223, 124, 140);
+  color: #fff;
+
+}
+a[href*="facebook"],a[href*="youtube"],a[href*="instagram"]{
+background: url('https://i.pinimg.com/originals/74/ad/16/74ad16b9e31615a3a3b5589c089146ca.jpg') no-repeat 100% 0;
+background-size: 25px, 10px;
+font-size: 24px;
+color: #c4c2c2;
+}
+a[href*="instagram"]{
+background: url('https://i.pinimg.com/originals/5d/95/0d/5d950d59e24ee6e82d96770631e6f54e.jpg')no-repeat 100% 0;
+background-size: 25px, 10px;
+}
+a[href*="youtube"]{
+background: url('https://i.pinimg.com/originals/ad/a0/53/ada053bdd4bdd39ee7e0f408ccb8bea7.jpg')no-repeat 100% 0;
+background-size: 25px, 10px;
+}
+.trangcuoifooter ul {
+list-style-type: none;
+}
+strong{
+ 
+}
+strong.ex3:hover, strong.ex3:active {color: #CC4C4C;}
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+
+      <div class="header1">
+        <marquee direction="down" scrollamount="2" class="HH1">
+          Beautiful like you
+        </marquee>
+        <div class="HHH1"></div>
+        <marquee direction="down" scrollamount="2" class="HH1">
+          Delicious like me
+  
+        </marquee>
+      </div>
+      <div class="header2">
+        <div style="display: flex; width: 100%;">
+          <div class="search"><input class="cmt3" type="search" name="lastName" placeholder="Tìm kiếm">
+            <div class="timkiem">
+              <img style=" width: 25px;height: 25px;margin-top: 5px;" src="{% static 'imagehesder/sear.png' %}" alt="search">
+            </div>
+          </div>
+          <div class="LG"><a href="{% url 'Home' %}"><img class="logo" src="{% static 'imagehesder/LG.png' %}" alt="logo"></a></div>
+          <div class="HH2">
+            <nav>
+              <div style="width:40%;"><a style="width:50%;" href="{% url 'profile'%}">Account</a></div>
+              <div style="width:30%;"></div>
+              <div style="width:10%;"><a style="width:50%;" href="{% url 'logout' %}">Logout</a>
+              </div>
+  
+            </nav>
+          </div>
+        </div>
+        <div class="congcu">
+          <div class="trong"></div>
+          <div class="navt">
+            <nav>
+              <div style="width:45%;">
+                <ul>
+                  <li>
+                    <a style="width:65%;" href="{% url 'Products' %}">Product</a>
+           
+                  </li>
+                </ul>
+              </div>
+              <div style="width:45%;">
+                <ul>
+                  <li>
+                    <a style="width:65%;" href="http://webcoban.vn/css/default.html">Material</a>
+                    <ul>
+                      <li><a style="border: none;" href="#">Link 1</a></li>
+                      <li><a style="border: none;" href="#">Link 2</a></li>
+                      <li><a style="border: none;" href="#">Link 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div style="width:45%;">
+                <ul>
+                  <li>
+                    <a style="width:55%;" href="http://webcoban.vn/javascript/default.html">Tool</a>
+                    <ul>
+                      <li><a style="border: none;" href="#">Link 1</a></li>
+                      <li><a style="border: none;" href="#">Link 2</a></li>
+                      <li><a style="border: none;" href="#">Link 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div style="width:45%;">
+                <ul>
+                  <li>
+  
+                    <a style="width:65%;" href="http://webcoban.vn/mysql/default.html">Design</a>
+                    <ul>
+                      <li><a style="border: none;" href="#">Link 1</a></li>
+                      <li><a style="border: none;" href="#">Link 2</a></li>
+                      <li><a style="border: none;" href="#">Link 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div style="width:45%;">
+                <ul>
+                  <li>
+                    <a style="width:65%;" href="{% url 'FAQ' %}">Service</a>
+  
+                  </li>
+                </ul>
+              </div>
+              <div style="width:45%;">
+                <ul>
+                  <li>
+                    <a style="width:65%;" href="{% url 'Cart' %}">Cart</a>
+                   </li>
+                </ul>
+              </div>
+  
+            </nav>
+          </div>
+          <div class="trong"></div>
+  
+  
+        </div>
+      </div>
+    </header>
+                    <main>
+                      <div style="width:100%;margin-top: 100px;text-align: center;height: 100px;">   <strong class="ex3" style=" text-align: center;font-size: 5em;font-family: 'Satisfy', cursive;">Account</strong></div>
+                       
+<div class="container">
+  <div class="leftbox" style="display: block;">
+      <nav class="update"style="display: block;">
+  <a onclick="tabs1()"
+  class="tab active">
+  <svg xmlns="http://www.w3.org/2000/svg"  width="25" height="25" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+    <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+  </svg>
+  </a>
+  <a onclick="tabs2()"
+  class="tab">
+  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-credit-card-2-back-fill" viewBox="0 0 16 16">
+      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0V4zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H0z"/>
+    </svg>
+  </a>
+  <a onclick="tabs3()"
+  class="tab">
+  <svg xmlns="http://www.w3.org/2000/svg"  width="25" height="25" fill="currentColor" class="bi bi-tv-fill" viewBox="0 0 16 16">
+      <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM2 2h12s2 0 2 2v6s0 2-2 2H2s-2 0-2-2V4s0-2 2-2z"/>
+    </svg>
+  </a>
+  <a onclick="tabs4()"
+  class="tab">
+  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"/>
+      <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/>
+      <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"/>
+    </svg>
+  </a>
+  <a onclick="tabs5()"
+  class="tab">
+  <svg xmlns="http://www.w3.org/2000/svg"  width="25" height="25" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+      <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+    </svg>
+  </a>
+      </nav>
+  </div>
+  <div class="rightbox" >
+    <form action="" method="post">
+      {% csrf_token %}
+      {% for message in messages %}  
+      <script>
+          window.onload = function(){
+              alert('{{message}}')
+          }           
+      </script>
+      {% endfor %}
+      <div class="proflie tabshow" id="proflie" >
+          <h1> Personal Info</h1>
+          <h2> Username</h2>
+          <p class="input">{{User.username}}</p>
+          <h2> Fullname</h2>
+          <input type="text" name="name" class=" input" value="{{User.last_name}}">
+          <h2> Gender</h2>
+          <input type="text" class=" input" value="Female">
+          <h2> Email</h2>
+          <input type="text" name="email" class=" input" value="{{User.email}}">
+          <h2> Passsword</h2>
+          <input type="text" name="password" class=" input" value="********">
+          <button class="btn"type="submit">Update</button>
+      </div>
+    </form>
+      <div class="payment tabshow" id="payment" style="display: none;"  >
+          <h1> Payment Info</h1>
+          <h2> Payment method</h2>
+          <input type="text" class=" input" value="MasterCard - 0202 ******* 67890">
+          <h2> Billing</h2>
+          <input type="text" class=" input" value="1234 some street in a town">
+          <h2> Zipcode</h2>
+          <input type="text" class=" input" value="567891">
+          <h2> Billing date</h2>
+          <input type="text" class=" input" value="Jan 20,2017">
+          <h2> Redeem card</h2>
+          <input type="text" class=" input" value="Enter gift code">
+          <button class="btn">Update</button>
+  
+      </div>
+      <div class="subcription tabshow"  id="subcription" style="display: none;">
+          <h1> Subcription Info</h1>
+          <h2> Payment date</h2>
+              <p>May 12,2019</p>
+          <h2> Next charges</h2>
+              <p> $80.5 <span>Includes tax</span></p>
+          <h2> Plan</h2>
+              <p> Limited Plan</p>
+          <h2> Monthly</h2>
+              <p>$107.99/month</p>
+          <button class="btn">Update</button>
+  
+      </div>
+      <div class=" privacy tabshow" id="privacy" style="display: none;">
+          <h1> Privacy Info</h1>
+          <h2> Manage Email Noti</h2>
+          <p> </p>
+             <h2> Manage Privacy Setting</h2>
+              <p> </p>
+          <h2> View terms of use</h2>
+              <p></p>
+          <h2>Personalied Ad Experience</h2>
+              <p></p>
+          <h2>Protect Account</h2>
+              <p></p>
+          <button class="btn">Update</button>
+  
+      </div>
+      <div class=" setting tabshow" id="setting" style="display: none;">
+          <h1> Account Setting</h1>
+          <h2>Sync Watchlist</h2>
+          <p></p>
+             <h2> Hold Subcription</h2>
+              <p> </p>
+          <h2>Cancel Subcription</h2>
+              <p></p>
+          <h2>Your Devices</h2>
+              <p></p>
+          <h2>Referrals</h2>
+              <p></p>
+          <button class="btn">Update</button>
+  
+      </div>
+  </div>
+   </div>
+   <script src="./jsa/jquery.js"></script>
+                    </main>
+           <!-- footer -->
+
+    <footer>
+                 
+      <div class ="trangcuoifooter">
+        <div>
+          <div class ="footerlocation" style="padding: 10px; color: #fff;">
+            <h2 style=" font-size: 40px; font-family: 'Roboto', sans-serif;"> Location </h2>
+            <p style="color: #fff;font-size: 18px;font-family: 'Roboto', sans-serif;"><strong>University Information Technology&nbsp;</strong><br>Nhom 3, IE<br>Monday - Friday: 10:30am&nbsp;- 7:30pm<br>Saturday: 11:00am - 7:30pm<br>Sunday and Public Holidays: 11:00am - 7:00pm<br>Tel: 0916545216</p>
+          </div>
+          <ul>
+            <li style="display: inline;"> <a href="facebook">.....</a></li>
+            <li style="display: inline;"> <a href="instagram">.....</a></li>
+            <li style="display: inline;"> <a href="youtube">.....</a></li>
+          </ul>
+        </div>
+        <div class="linkfooter">
+          <h2 style="font-family: 'Roboto', sans-serif; font-size: 40px;" >Quick Links</h2>
+    
+          <ul style="padding: 6px; color: #fff;font-size: 18px;">
+              <li>
+                <a href="" >FAQ</a>
+              </li>
+              <li >
+                <a href="" >About Us</a>
+              </li>
+              <li>
+                <a href="">Blog</a>
+              </li>
+              <li>
+                <a href="">Press</a>
+              </li>
+              <li>
+                <a href="">Contact Us</a>
+              </li>
+              <li>
+                <a href="" >Cart</a>
+              </li>
+              <li">
+                <a href="">Searching</a>
+              </li>
+            </ul>
+        </div>
+        <div class="footerlienlac" style="flex-basis: 325px;">
+          <h2 class="Footer__Title Heading u-h6" style=" font-size: 40px;font-family: 'Roboto', sans-serif;">Newsletter</h2>
+          
+            <p style="color: #fff;font-size: 18px;font-family: 'Roboto', sans-serif;">Subscribe to receive updates, access to exclusive deals, and more.</p>
+          <form style="margin-top: 18px;width: 100%;">
+            <input type="email"  class="footerEmail"  placeholder="Enter your email address" required="">
+            <button type="submit" class="footersubcribe">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    
+  
+</body>
+</html>
